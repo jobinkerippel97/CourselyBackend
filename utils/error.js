@@ -3,7 +3,7 @@ const handleError = async (error, req, res, next) => {
         const statuscode = error.statuscode || 500;
         const message = error.message || "Somthing went wrong please try again later "
 
-        res.status(statuscode).message({message})
+        res.status(statuscode).json({message})
 
     } catch (error) {
         

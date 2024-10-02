@@ -43,7 +43,9 @@ const MentorSchema = new mongoose.Schema({
     }
 ]
  
-  });
+  },
+  {timestamps: true}
+);
 
   const Mentor = mongoose.model('Mentor', MentorSchema);
 

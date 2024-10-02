@@ -4,7 +4,7 @@ const express = require('express')
 require('dotenv').config()
 
 const { apiRoutes } = require('./routes')
-const { connectDB } = require('./config/DB')
+const { connectDB } = require('./config/db.js')
 
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
